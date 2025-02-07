@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Día de San Valentín, Jorge!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            margin: 0;
+        }
+        .love-message {
+            font-size: 24px;
+            text-align: center;
+            margin: 40px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .image-container {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ff6b6b;
+            color: white;
+        }
+        .big-heart {
+            font-size: 100px;
+            color: #ff0000;
+            text-align: center;
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Feliz Día de San Valentín, Jorge!</h1>
+    </header>
+    
+    <div class="container">
+        <div class="big-heart">❤️</div>
+        
+        <div class="love-message">
+            Mi querido Jorge, haces que mi corazón lata más rápido cada día. Eres el amor de mi vida y mi mejor amigo. ❤️
+        </div>
+        
+        <div class="image-section">
+            <div class="image-container">
+                <img src="/images/WhatsApp Image 2025-02-07 at 09.31.53.jpeg" alt="Jorge y Yo 1">
+            </div>
+            <div class="image-container">
+                <img src="/images/WhatsApp Image 2025-02-07 at 09.49.27.jpeg" alt="Jorge y Yo 2">
+            </div>
+            <div class="image-container">
+                <img src="/placeholder.svg?height=200&width=200" alt="Jorge y Yo 3">
+            </div>
+        </div>
+        
+        <div class="love-message">
+            Tu sonrisa ilumina mi día y tu amor llena mi corazón. Cada momento contigo es un tesoro que guardo en lo más profundo de mi ser. 💖
+        </div>
+        
+        <div class="image-section">
+            <div class="image-container">
+                <img src="/placeholder.svg?height=200&width=200" alt="Nuestro Momento Especial 1">
+            </div>
+            <div class="image-container">
+                <img src="/placeholder.svg?height=200&width=200" alt="Nuestro Momento Especial 2">
+            </div>
+        </div>
+        
+        <div class="love-message">
+            Aprecio cada momento que pasamos juntos. Tus abrazos son mi hogar y tu risa es mi melodía favorita. ¡Eres mi todo, Jorge! 😘
+        </div>
+
+        <div class="love-message">
+            Contigo, cada día es una aventura llena de amor y felicidad. Gracias por ser tú y por amarme como lo haces. 💑
+        </div>
+
+        <div class="love-message">
+            Nuestro amor es como un cuento de hadas, pero mejor, porque es real y crece cada día más. Te amo con todo mi corazón, Jorge. 💞
+        </div>
+    </div>
+    
+    <footer>
+        <p>Con todo mi amor, Tu San Valentín ❤️</p>
+        <p>Hoy, mañana y siempre, mi corazón es tuyo.</p>
+    </footer>
+
+    <script>
+        // Animación simple para hacer que los mensajes de amor aparezcan uno por uno
+        document.addEventListener('DOMContentLoaded', function() {
+            const messages = document.querySelectorAll('.love-message');
+            messages.forEach((message, index) => {
+                message.style.animationDelay = `${index * 2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
